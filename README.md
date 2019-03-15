@@ -11,12 +11,10 @@ _This application gathers input for size of pizza and toppings for the pizza to 
 ## Specs
 * _First, the users inputted birthdate will be compared to the universal time to find the users age._
   * _For example: If the users birthdate is May 4, 1998 and the current date is March 15, 2019, the age 20 will be returned._
-* _Next, the users age will be converted to what thier age would be on other planets._
+* _Next, the users age will be converted to what their age would be on other planets._
   * _For example: If the user is 20 on Earth, then that means they would be 4 on Mercury, 12.4 on Venus, 37.6 on Mars, and 237 on Jupiter._
 * _After that, the users estimated time left to live will be calculated._
   * _For example: If the user is 20 they will have about 60 years left to live._
-* _Once that's working,_
-  * _For example: anchovy, pineaple, extra cheese_
 * _Finally, if the user has surpassed their life expectancy then the time they have surpassed their expectancy will be returned._
   * _For example: If the user is 90 they will have surpassed their life expectancy by about 10 years._
 
