@@ -2,7 +2,7 @@ export class Age {
   constructor(month, day, year) {
     this.date = new Date();
     this.birth = new Date(month, day, year);
-    this.earth = this.date - this.birth;
+    this.earth = this.difference();
     this.venusAge = venusAge();
     this.jupiterAge = jupiterAge();
     this.mercuryAge = mercuryAge();
@@ -10,8 +10,10 @@ export class Age {
   }
   difference() {
     const difference = this.date - this.birth;
+    console.log(difference);
     const dayDifference = Math.floor(difference / 31557600000);
     const totalDifference = Math.floor(dayDifference / 365);
+    return totalDifference;
   }
   venusAge() {
     const mercuryRatio = 0.62;
