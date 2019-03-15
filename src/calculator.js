@@ -1,5 +1,4 @@
 
-
 export class Age {
 
   constructor(age){
@@ -13,28 +12,11 @@ export class Age {
     let answer = (age * mercury);
     return answer;
   }
-  mercuryLifeChecker() {
-    let age = this.age;
-    const mercury = 0.24;
-    let answer = (age * mercury);
-    let expected = this.expected;
-    let remaining = (expected - answer);
-    return remaining;
-  }
-
   venusChecker() {
     let age = this.age;
     const venus = 0.62;
     let answer = (age * venus);
     return answer;
-  }
-  venusLifeChecker() {
-    let age = this.age;
-    const mercury = 0.62;
-    let answer = (age * mercury);
-    let expected = this.expected;
-    let remaining = (expected - answer);
-    return remaining;
   }
   marsChecker() {
     let age = this.age;
@@ -42,29 +24,70 @@ export class Age {
     let answer =  (age * mars);
     return answer;
   }
-  marsLifeChecker() {
-    let age = this.age;
-    const mercury = 1.88;
-    let answer = (age * mercury);
-    let expected = this.expected;
-    let remaining = (expected - answer);
-    return remaining;
-  }
   jupiterChecker() {
     let age = this.age;
     const jupiter = 11.86;
     let answer =  (age * jupiter);
     return answer;
   }
+
+  //PLANET LIFE EXPECTANCY FUNCTIONS
+  mercuryLifeChecker() {
+    let age = this.age;
+    const mercury = 0.24;
+    const answer = (age * mercury);
+    const expected = this.expected;
+
+    if (answer < expected) {
+      let remaining = (expected - answer);
+      return remaining;
+    } else {
+      let remaining = (answer - expected);
+      return remaining;
+    }
+  }
+  venusLifeChecker() {
+    let age = this.age;
+    const mercury = 0.62;
+    const answer = (age * mercury);
+    const expected = this.expected;
+
+    if (answer < expected) {
+      let remaining = (expected - answer);
+      return remaining;
+    } else {
+      let remaining = (answer - expected);
+      return remaining;
+    }
+  }
+  marsLifeChecker() {
+    let age = this.age;
+    const mercury = 1.88;
+    const answer = (age * mercury);
+    const expected = this.expected;
+
+    if (answer < expected) {
+      let remaining = (expected - answer);
+      return remaining;
+    } else {
+      let remaining = (answer - expected);
+      return remaining;
+    }
+  }
   jupiterLifeChecker() {
     let age = this.age;
     const mercury = 11.86;
-    let answer = (age * mercury);
-    let expected = this.expected;
-    let remaining = (expected - answer);
-    return remaining;
-  }
-  //PLANET LIFE EXPECTANCY FUNCTIONS
+    const answer = (age * mercury);
+    const expected = this.expected;
 
+    if (answer < expected) {
+      let remaining = (expected - answer);
+      return remaining;
+
+    } else {
+      let remaining = (answer - expected);
+      return remaining;
+    }
+  }
 
 }

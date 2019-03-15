@@ -33,6 +33,6 @@ describe ('Age', function() {
   })
   it('should give the expected time remaining on jupiter', function() {
     let age = new Age(20)
-    expect(age.jupiterLifeChecker()).toEqual(-157.2)
+    expect(age.jupiterLifeChecker()).toEqual(157.2)
   })
 })

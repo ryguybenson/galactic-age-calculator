@@ -1,17 +1,15 @@
 # _Galactic Age Calculator_
 
-####  _This application gathers input from a user and returns a price based on their input. 02/05/2019_
+####  _This application determines the age of the user and also returns their age in years based on other planets solar year length_
 
-#### By _**{List of contributors}**_
+#### By _**Riley Benson**_
 
 ## Description
 
-_This application gathers input for size of pizza and toppings for the pizza to return a price based on these results._
+_This application determines the age of the user and also returns their age in years based on other planets solar year length. It will then take those returned ages and tell them how much longer they are expected to live or how much they surpassed the expected age._
 
 ## Specs
-* _First, the users inputted birthdate will be compared to the universal time to find the users age._
-  * _For example: If the users birthdate is May 4, 1998 and the current date is March 15, 2019, the age 20 will be returned._
-* _Next, the users age will be converted to what their age would be on other planets._
+* _First, the users age will be converted to what their age would be on other planets._
   * _For example: If the user is 20 on Earth, then that means they would be 4 on Mercury, 12.4 on Venus, 37.6 on Mars, and 237 on Jupiter._
 * _After that, the users estimated time left to live will be calculated._
   * _For example: If the user is 20 they will have about 60 years left to live._
@@ -22,6 +20,7 @@ _This application gathers input for size of pizza and toppings for the pizza to 
 
 * _Clone the repository from the "url"_
 * _Open the repository in your preferred web browser_
+* _Run 'npm install' in your preferred terminal(node.js must be downloaded on the computer)._
 * _Open the index.html in your preferred web browser to view the application._
 
 
@@ -36,7 +35,7 @@ _E-mail ryguybenson@yahoo.com with any questions, concerns, or to make a contrib
 
 ## Technologies Used
 
-_HTML, CSS, Javascript, and Bootstrap were used to make this application_
+_Javascript, Jasmine ,and Karma were used to make this application_
 
 ### License
 
