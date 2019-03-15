@@ -36,3 +36,22 @@ export class Age {
     return mercury;
   }
 }
+// export function Age(age) {
+//   this.age = age;
+// }
+// Age.protoyype.mercuryAge() {
+//   const venus = Math.floor(this.age/0.24);
+//   return venus;
+// }
+// Age.protoyype.marsAge() {
+//   const venus = Math.floor(this.age/1.88);
+//   return venus;
+// }
+// Age.protoyype.venusAge() {
+//   const venus = Math.floor(this.age/0.62);
+//   return venus;
+// }
+// Age.protoyype.jupiterAge() {
+//   const venus = Math.floor(this.age/11.86);
+//   return venus;
+// }
