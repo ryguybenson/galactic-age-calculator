@@ -1,23 +1,19 @@
-import {Age} from './../src/age-calculator.js';
+import {Calender} from './../src/age-calculator.js';
 
-describe('Age', function() {
+describe('Calender', function() {
 
-  beforeEach(function() {
-    userAge = new Age(20)
-  })
-  it('should return a normal earth age', function() {
-    expect(userAge.toEqual(20);
-  })
+it('will test if its a leap year', function () {
+  let year = new Calender(1,1,2000)
+  expect(year.checkYear()).toEqual(true);
+
 })
-  // it('will test if the users age on other planets is correct', function() {
-  //
-  // }
-  // it('will test if the users time to live is correct', function() {
-  //
-  // }
-  // it('will test if the users time passed expected life is correct', function() {
-  //
-  // }
+it("will test whether the month has 31 days", function() {
+  let month = new Calender(3,2,2000)
+  expect(month.checkMonth()).toEqual(true);
+  })
+it("KOHICHI YOU", function() {
+  let day = new Calender(3,5,2001)
+  expect(day.checkDay()).toEqual(true);
 
-
-});
+})
+})
